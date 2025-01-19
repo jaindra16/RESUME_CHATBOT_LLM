@@ -1,5 +1,5 @@
 # Resume Questionnaire Bot Using LLM
-
+# Add your own OpenAI_API_KEY, env file is deleted
 ## Overview
 
 The **Resume Questionnaire Bot** is a chatbot built with LangChain, FAISS, and Streamlit. It leverages advanced language models to answer questions about your resume in a conversational and interactive way. The bot reads and indexes my resume (PDF), allowing you to query its contents dynamically.
