@@ -7,7 +7,7 @@ from langchain.chains.retrieval import create_retrieval_chain
 from langchain_openai import ChatOpenAI
 from langchain import hub
 
-def run_llm(query: str, chat_history: list = []):
+def res_docs(query: str, chat_history: list = []):
     embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
     vectorstore = FAISS.load_local("faiss_resume_index", embeddings, allow_dangerous_deserialization=True)
 

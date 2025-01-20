@@ -1,4 +1,4 @@
-from backend.core import run_llm
+from backend.core import res_docs
 import streamlit as st
 from streamlit_chat import message
 
@@ -15,7 +15,7 @@ prompt = st.text_input("Ask about ME", placeholder="Enter your question here..."
 
 if prompt:
     with st.spinner("Generating response..."):
-        generated_response = run_llm(
+        generated_response = res_docs(
             query=prompt, chat_history=st.session_state["chat_history"]
         )
         
